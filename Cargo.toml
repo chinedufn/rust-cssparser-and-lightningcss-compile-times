@@ -1,0 +1,12 @@
+[package]
+name = "rust-cssparser-and-lightningcss-compile-times"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+with-lightningcss = ["lightningcss"]
+with-rust-cssparser = ["cssparser"]
+
+[dependencies]
+cssparser = {optional = true, version = "=0.29"}
+lightningcss = {optional = true, version = "=1.0.0-alpha.38"}
